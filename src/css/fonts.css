@@ -1,0 +1,30 @@
+@font-face {
+    font-family:"vazirmatn";
+    font-weight: 400;
+    font-style: normal;
+    src: url(/assets/fonts/Vazirmatn-Medium.woff2) format("woff2");
+}
+
+
+@font-face {
+    font-family:"vazirmatn";
+    font-weight: 700;
+    font-style: normal;
+    src: url(/assets/fonts/Vazirmatn-Bold.woff2) format("woff2");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+ font-family:"vazirmatn",Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+
+
+:root {
+    --color-primary:#00ffd5a1;
+    --color-secondary:rgb(23, 23, 237);
+    --color-primary900:#00e5ff;
+    --color-secondary0:#ffffff;
+    --color-green: hsla(120, 87%, 39%, 0.706);
+    --color-primary0: #edf2f7;
+
+
+ 
+}
+
+
+body{
+    background:var(--color-primary0);
+    font-size: 62.5%;
+   
+}
+
+
+.ticket{
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    background-color:var(--color-secondary0);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+
+}
+
+.btn {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color:var(--color-green)
+ 
+}
+
+
+
+
+h1 {
+    text-align: center;
+  
+    margin: 2rem 0;
+
+}
+
+.tickets {
+    width: calc(100%-6rem);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    margin: 0 auto;
+    
+}
+
+.ticket__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    margin-bottom: 1rem;
+}
+
+
+ .ticket__footer {
+    display:flex;
+    justify-content:space-between;
+ }
+
+ .ticket__footer--dev {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+ }
+
+ .ticket__footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+ }
+
+.ticket__btn {
+    color:var(--color-secondary0);
+    margin-left: 0.5rem;
+    
+}
+
+.ticket__header--one{
+
+
+    font-weight: 700;
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+}
+
+   
+.ticket__header--one::first-letter {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:var(--color-primary900);
+    padding:0.5rem;
+    margin-left: 0.5rem;
+
+
+    
+}
+
+
+
+@media screen and (min-width:480px)  {
+
+    .tickets{
+      
+        grid-template-columns:1fr 1fr;
+    }
+    h1 {
+        text-align: right;
+        margin-right: 1.5rem;
+    
+    
+}
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .tickets {
+        grid-template-columns:repeat(3,1fr);
+    }
+
+
+    h1 {
+        text-align: right;
+        margin-right: 1.5rem
+
+    
+}
+
+
+
+}
+
+
+.ticket__main :first-child {
+    font-weight: 700;
+
+}
+/* 
+.ticket__footer--dev p {
+    font-weight: 700;
+}
+ */
+
